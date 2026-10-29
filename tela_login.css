@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   LADO ESQUERDO
+========================= */
+
+.lado-esquerdo {
+    width: 50%;
+    background: #000;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px;
+}
+
+.conteudo-esquerdo {
+    width: 80%;
+    max-width: 550px;
+}
+
+.conteudo-esquerdo h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.conteudo-esquerdo > p {
+    font-size: 15px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.conteudo-esquerdo h3 {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+
+/* BENEFÍCIOS */
+
+.beneficio {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.beneficio > span {
+    font-size: 20px;
+}
+
+.beneficio strong {
+    font-size: 15px;
+}
+
+.beneficio p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 5px;
+    color: #ddd;
+}
+
+
+/* =========================
+   LADO DIREITO
+========================= */
+
+.lado-direito {
+    width: 50%;
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+.login {
+    width: 100%;
+    max-width: 410px;
+}
+
+
+/* TOPO */
+
+.topo {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+
+    font-size: 13px;
+    margin-bottom: 55px;
+}
+
+.topo a {
+    color: #111;
+}
+
+
+/* TÍTULO */
+
+.login h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BOTÕES SOCIAIS
+========================= */
+
+.botao-social {
+    width: 100%;
+    height: 42px;
+
+    background: white;
+    border: 1px solid #c8c8c8;
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-bottom: 8px;
+}
+
+.botao-social:hover {
+    background: #f5f5f5;
+}
+
+
+/* =========================
+   "OU"
+========================= */
+
+.ou {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 20px 0;
+}
+
+.ou span {
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+}
+
+.ou p {
+    color: #555;
+    font-size: 14px;
+}
+
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+form input,
+form select {
+    width: 100%;
+    height: 42px;
+
+    border: 1px solid #c8c8c8;
+    border-radius: 6px;
+
+    padding: 0 12px;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #0969da;
+}
+
+
+/* TEXTO DA SENHA */
+
+form small {
+    font-size: 12px;
+    color: #666;
+
+    line-height: 1.4;
+
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   CHECKBOX
+========================= */
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin: 2px 0 20px;
+}
+
+.checkbox input {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+
+.checkbox label {
+    font-weight: normal;
+    margin: 0;
+}
+
+
+/* =========================
+   BOTÃO CRIAR CONTA
+========================= */
+
+.criar-conta {
+    width: 100%;
+    height: 42px;
+
+    background: #0a8f2c;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.criar-conta:hover {
+    background: #087a25;
+}
+
+
+/* =========================
+   TERMOS
+========================= */
+
+.termos {
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: #666;
+
+    margin-top: 18px;
+}
+
+.termos a {
+    color: #0969da;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 800px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .lado-esquerdo,
+    .lado-direito {
+        width: 100%;
+    }
+
+    .lado-esquerdo {
+        min-height: 500px;
+    }
+
+    .lado-direito {
+        padding: 40px 25px;
+    }
+
+}
